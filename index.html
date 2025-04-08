@@ -4,21 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redireccionando...</title>
-  <script>
-    window.onload = function() {
-      const params = new URLSearchParams(window.location.search);
-      const id = params.get("id");
-      if (id) {
-        const target = "https://script.google.com/macros/s/AKfycbx8f4fIZPdBtSoFSMzM5a6dVU-CmYI1ymnlv2L-5SeIk9XCeQRc1IcGMAtCydnXfitB/exec?codigo=" + id;
-        window.location.href = target;
-      } else {
-        document.body.innerHTML = "<h2>Error: No se especificó ningún ID</h2>";
-      }
+  <title>Tu entrada - Nostalgia 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 40px;
     }
-  </script>
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <p>Redireccionando...</p>
+  <img src="entrada.jpg" alt="Tu entrada al evento" />
+  <h2>Mostrá esta entrada al personal el día del evento</h2>
 </body>
 </html>
