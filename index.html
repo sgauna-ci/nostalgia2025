@@ -62,7 +62,7 @@
 </head>
 <body style="background: url('entrada.jpg') no-repeat center center fixed; background-size: cover;">
   <div style="background-color: rgba(0, 0, 0, 0.6); padding: 40px;">
-  <img src="entrada.jpg" alt="Tu entrada al evento" />
+  
 
   <h1>¡Gracias por adquirir tu entrada!</h1>
   <div id="codigo">ID: </div>
@@ -89,7 +89,7 @@
     if (id) {
       document.getElementById("codigo").innerText = "ID: " + id;
     } else {
-      document.getElementById("codigo").innerText = "ID no especificado";
+      document.getElementById("codigo").style.display = "none";
     }
   </script>
 </div>
